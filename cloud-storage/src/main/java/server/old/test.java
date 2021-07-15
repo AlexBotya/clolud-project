@@ -1,4 +1,6 @@
-package server;
+package server.old;
+
+import server.old.LombokTest;
 
 public class test {
     public static void main(String[] args) {

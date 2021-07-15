@@ -1,4 +1,4 @@
-package client;
+package client.old;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

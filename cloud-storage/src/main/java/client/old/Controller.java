@@ -1,4 +1,4 @@
-package client;
+package client.old;
 
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
