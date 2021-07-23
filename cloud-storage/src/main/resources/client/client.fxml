@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="client.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="client.ControllerForNetty">
    <children>
-      <ListView fx:id="listView" layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="572.0" />
-      <Label fx:id="output" layoutX="14.0" layoutY="362.0" prefHeight="24.0" prefWidth="457.0" text="Label" />
-      <Button onAction="#send" layoutX="521.0" layoutY="359.0" mnemonicParsing="false" text="Send" />
+      <ListView fx:id="clientView" layoutY="56.0" prefHeight="335.0" prefWidth="280.0" />
+      <ListView fx:id="serverView" layoutX="347.0" layoutY="53.0" prefHeight="335.0" prefWidth="273.0" />
+      <Button onAction="#upload" layoutX="282.0" layoutY="56.0" mnemonicParsing="false" prefHeight="162.0" prefWidth="65.0" text="&gt;" />
+      <Button onAction="#download" layoutX="282.0" layoutY="229.0" mnemonicParsing="false" prefHeight="162.0" prefWidth="65.0" text="&lt;" />
+      <TextField fx:id="clientPath" editable="false" layoutY="14.0" prefHeight="31.0" prefWidth="231.0" />
+      <TextField fx:id="serverPath" editable="false" layoutX="347.0" layoutY="14.0" prefHeight="31.0" prefWidth="222.0" />
+      <Button onAction="#clientPathUp" layoutX="231.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="43.0" text="..." />
+      <Button onAction="#serverPathUp" layoutX="571.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="43.0" text="..." />
    </children>
 </Pane>

@@ -8,5 +8,8 @@ public enum CommandType implements Serializable {
     LIST_REQUEST,
     LIST_MESSAGE,
     DELETE_REQUEST,
-    RENAME_REQUEST
+    RENAME_REQUEST,
+    PATH_REQUEST,
+    PATH_UP,
+    PATH_RESPONSE
 }
